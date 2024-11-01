@@ -1,0 +1,5 @@
+node_modules
+dist
+.env
+src/logs
+src/controllers/proyecto-documentos-metlife-6851438d0bf4.json

@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./static/Inter-Regular.ttf);
+}
+
+.loginHeight {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    align-content: end;
+    position: relative;
+    right: 0px;
+    vertical-align:middle; text-align:right;
+
+
+}
+
+ion-grid, ion-row, ion-col {
+    padding: 0px !important;
+}
+
+input {
+    outline: none;
+    font-family: 'Inter';
+    /* border-radius: 8px;
+    border: 1px solid var(--Neutral-300, #C4C4C4); */
+    background: var(--Neutral-00, #FFF);
+    height: 48px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+
+input::placeholder {
+    color: #909090;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* input:focus {
+    border: 1px var(--ion-color-primary) solid !important;
+}
+
+input.error {
+    border: 1px var(--ion-color-danger) solid !important;
+} */
+
+.label {
+    color: #757575;
+    font-size: 10px;
+    font-family: Inter;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    margin: 0px 0px 4px 0px;
+}
+
+.button-primary, .button-google {
+    color: white;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 600;
+    word-wrap: break-word;
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.button-primary {
+    background-color: var(--ion-color-primary)
+}
+
+.button-google {
+    background-color: var(--ion-color-google)
+}
+
+/* LOGO */
+
+.logoContainer {
+    padding: 10px;
+    height: 200px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.logoContainer img, .loginHeight img {
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+}
+.loginHeight img {
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+}
+
+/* Menu */
+
+.menuMain {
+    --width: 256px;
+}
+
+.menuContainer {
+    --padding-bottom: 16px;
+    --padding-start: 24px;
+    --padding-top: 16px;
+    --padding-end: 24px;
+}
+
+.menuButton, .menuButtonActive {
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.menuIconActive {
+    height: 100%;
+    margin-right: 16px;
+    filter: var(--filter-primary);
+}
+
+.menuTextActive {
+    margin-top: 7px;
+    margin-bottom: 1px;
+}
+
+.menuIcon {
+    height: 100%;
+    margin-right: 16px;
+}
+
+.menuText {
+    margin-top: 7px;
+    margin-bottom: 1px;
+}
+
+.menuButtonActive {
+    border: 1px var(--ion-color-primary) solid;
+    border-radius: 4px;
+    color: var(--ion-color-primary);
+}
+
+.menuButton {
+    color: #909090;
+}
+
+/* .menuButton {
+    border: transparent;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+} */
+
+/* User button */
+
+.iconUserButton {
+    --border-color: #e1e1e1;
+    --border-style: solid;
+    --border-width: 1px;
+    --border-radius: 100px !important;
+}
+
+/* Home */
+
+.button-home {
+    border-radius: 15px;
+    background: var(--Neutral-50, #FAFAFA);
+    /* Cards Shadow */
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    width: 208px;
+    height: 214px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.button-home p {
+    color:  #202020;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    /* Cards/Channels */
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+    letter-spacing: 0.27px;
+    color: var(--ion-color-primary);
+}
+
+.button-home:hover {
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.20);
+}
+
+.button-home:active{
+    box-shadow: 2px 2px 4px 0px rgba(51, 51, 51, 0.13) inset;
+}
+
+.calendar {
+    border-radius: 8px;
+}
+
+.calendar-day-wrapper {
+    --height: 10vh !important;
+}
+
+.calendar-day {
+    width: 100% !important;
+    min-width: none !important;
+    align-items: flex-start !important;
+    text-align: right !important;
+}
+
+ion-datetime::part(calendar-day active) {
+    background-color: #3880ff !important;
+}
+
+ion-datetime::part(calendar-day today) {
+    background-color: #a1c1f9 !important;
+}
+
+ion-datetime::part(calendar-day) {
+    height: 10vh;
+    border-radius: 0px !important;
+    width: 100% !important;
+    min-width: none !important;
+    align-items: flex-start !important;
+    justify-content: right !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+ion-datetime .datetime-calendar .calendar-header .calendar-action-buttons .calendar-month-year {
+    width: 100% !important;
+}
+
+ion-datetime::part(month-year-button native) {
+    width: 100%;
+}
+
+
+.padding-inputs {
+    padding: 0px 10px !important;
+    margin-bottom: 10px !important;
+}
