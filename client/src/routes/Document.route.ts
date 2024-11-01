@@ -2,9 +2,11 @@ import axios from "axios";
 import { DocumentProject } from "../interfaces/Document.interface";
 import { UserGoogle } from "../interfaces/User.interface";
 
+const url = import.meta.env.VITE_BASE_URL
+
 export const newDocument = async (userId: string) => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/docs/newDocument`, {userId: userId})
+        const response = await axios.post(`${url}/api/docs/newDocument`, {userId: userId})
         return response.data
     } catch (error) {
         return error
@@ -17,7 +19,7 @@ export const createDocument = async (document: DocumentProject, oauth: any, file
     formData.append('file', file)
     formData.append('auth', JSON.stringify(oauth))
     try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/docs/createDocument`, formData, {headers: {
+        const response = await axios.post(`${url}/api/docs/createDocument`, formData, {headers: {
             "Content-Type": 'multipart/form-data'
         }})
         return response.data
@@ -28,7 +30,7 @@ export const createDocument = async (document: DocumentProject, oauth: any, file
 
 export const getDocuments = async () => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/docs/getDocuments`)
+        const response = await axios.post(`${url}/api/docs/getDocuments`)
         console.log(response)
         return response.data
     } catch (error) {

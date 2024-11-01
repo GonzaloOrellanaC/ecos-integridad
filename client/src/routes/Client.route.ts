@@ -1,6 +1,8 @@
 import axios from "axios"
 
+const url = import.meta.env.VITE_BASE_URL
+
 export const getAllClients = async () => {
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/client/getClients`)
+    const response = await axios.get(`${url}/api/client/getClients`)
     return response.data
 }

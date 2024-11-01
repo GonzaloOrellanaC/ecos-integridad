@@ -1,7 +1,7 @@
 {
-  "name": "punto_venta",
+  "name": "Ecos Integridad",
   "integrations": {
     "capacitor": {}
   },
-  "type": "react"
+  "type": "react-vite"
 }

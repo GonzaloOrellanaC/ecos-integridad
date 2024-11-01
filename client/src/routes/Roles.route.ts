@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = process.env.REACT_APP_API_URL
+const url = import.meta.env.VITE_BASE_URL
 
 export const getAllRoles = async (token: string) => {
     try {

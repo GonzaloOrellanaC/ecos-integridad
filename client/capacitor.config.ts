@@ -1,12 +1,9 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'punto_venta',
-  webDir: 'build',
-  server: {
-    androidScheme: 'https'
-  }
+  appName: 'Ecos Integridad',
+  webDir: 'dist'
 };
 
 export default config;

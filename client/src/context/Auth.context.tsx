@@ -32,7 +32,7 @@ export const AuthProvider = (props: any) => {
     const [sub, setSub] = useState<string>()
     const [roles, setRoles] = useState<any[]>([])
 
-    const nameApp = process.env.REACT_APP_NAME_APP
+    const nameApp = import.meta.env.VITE_NAME_APP
 
 
     const login = (email: string, password: string) => {
